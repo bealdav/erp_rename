@@ -27,7 +27,7 @@ def process():
             return True
         for old, new in mapping.items():
             for query in QUERIES:
-                print query % (old, new)
+                print query % (new, old)
     else:
         help()
 
